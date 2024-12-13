@@ -10,7 +10,7 @@ const NavLinks = () => {
 
   useEffect(() => {
     setRandomNumb(Math.floor(Math.random() * 11) + 1);
-  });
+  }, []);
 
   const setRandomLink = () => {
     const random = Math.floor(Math.random() * 11) + 1;

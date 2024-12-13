@@ -20,7 +20,7 @@ const Page = () => {
     };
 
     fetchData();
-  }, []);
+  });
 
   console.log(data);
 

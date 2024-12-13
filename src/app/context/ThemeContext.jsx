@@ -6,8 +6,10 @@ export const ThemeContext = createContext();
 
 export const ThemeContextProvider = ({ children }) => {
   const getFromLocalStorage = () => {
-    const value = localStorage.getItem("theme");
-    return value || "lightMode";
+    if (typeof window !== "undefined") {
+      localStorage.getItem("theme");
+    }
+    return localStorage.getItem("theme") || "lightMode";
   };
 
   const [theme, setTheme] = useState(() => getFromLocalStorage());
