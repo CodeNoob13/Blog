@@ -7,9 +7,9 @@ export const ThemeContext = createContext();
 export const ThemeContextProvider = ({ children }) => {
   const getFromLocalStorage = () => {
     if (typeof window !== "undefined") {
-      localStorage.getItem("theme");
+      return localStorage.getItem("theme") || "lightMode";
     }
-    return localStorage.getItem("theme") || "lightMode";
+    localStorage.getItem("theme") || "lightMode";
   };
 
   const [theme, setTheme] = useState(() => getFromLocalStorage());
