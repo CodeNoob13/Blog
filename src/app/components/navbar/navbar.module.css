@@ -1,0 +1,12 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+
+.rightSideNav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}

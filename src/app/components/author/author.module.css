@@ -1,0 +1,23 @@
+.authorContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.authorImage {
+  border-radius: 100px;
+}
+
+.text {
+  font-size: 14px;
+  color: #97989f;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+@media screen and (max-width: 400px) {
+  .text {
+    font-size: 12px;
+  }
+}

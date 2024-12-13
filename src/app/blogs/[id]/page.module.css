@@ -1,0 +1,61 @@
+.container {
+  padding: 64px 0;
+}
+
+.label {
+  padding: 4px 10px;
+  max-width: fit-content;
+  background: rgba(75, 107, 251, 0.05);
+  color: #4b6bfb;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.title {
+  margin: 24px 0;
+  max-width: 700px;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  object-fit: contain;
+}
+
+.desc {
+  padding: 32px 0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .imgContainer {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 20px;
+  }
+  .imgContainer {
+    height: 350px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .imgContainer {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .imgContainer {
+    height: 200px;
+  }
+}

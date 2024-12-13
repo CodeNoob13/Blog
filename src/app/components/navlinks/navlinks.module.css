@@ -1,0 +1,12 @@
+.links {
+  display: flex;
+  gap: 30px;
+
+  color: var(--color);
+}
+
+@media screen and (max-width: 630px) {
+  .links {
+    display: none;
+  }
+}

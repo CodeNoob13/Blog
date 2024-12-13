@@ -1,0 +1,24 @@
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 64px;
+}
+
+.caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+
+@media screen and (max-width: 1240px) {
+  .gridWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .gridWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,86 @@
+.container {
+  display: none;
+}
+
+.hamburger {
+  height: 40px;
+  width: 35px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger div span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color);
+  top: 50%;
+  border-radius: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+}
+
+.hamburger div span:nth-child(2) {
+  top: 25%;
+}
+
+.hamburger div span:last-child {
+  top: 75%;
+}
+
+.hamburger div span:first-child.rotated {
+  display: none;
+}
+
+.hamburger div span:nth-child(2).rotated {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.hamburger div span:last-child.rotated {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.linksContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+
+  z-index: 999;
+}
+
+.links {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  color: var(--color);
+  align-items: center;
+  gap: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.switcher {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+}
+
+@media screen and (max-width: 630px) {
+  .container {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .switcher {
+    right: 16px;
+  }
+}
