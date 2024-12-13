@@ -5,14 +5,12 @@ import { createContext, useEffect, useState } from "react";
 export const ThemeContext = createContext();
 
 export const ThemeContextProvider = ({ children }) => {
-  const getFromLocalStorage = () => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || "lightMode";
-    }
-    localStorage.getItem("theme") || "lightMode";
-  };
+  const [theme, setTheme] = useState("lightMode");
 
-  const [theme, setTheme] = useState(() => getFromLocalStorage());
+  useEffect(() => {
+    const value = localStorage.getItem("theme") || "lightMode";
+    setTheme(value);
+  }, []);
 
   const toggle = () => {
     setTheme(theme === "lightMode" ? "darkMode" : "lightMode");
