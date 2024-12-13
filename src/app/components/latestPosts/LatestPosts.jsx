@@ -20,7 +20,7 @@ const LatestPosts = () => {
     };
 
     fetchData();
-  });
+  }, []);
 
   const filterPosts = (category) => {
     setVisiblePosts(data.filter((blog) => blog.category === category));

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
-const Page = () => {
+const page = () => {
   return (
     <div className={styles.container}>
       <div className={styles.contactHeader}>
@@ -36,4 +36,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
