@@ -14,7 +14,7 @@ const Navbar = () => {
         <Logo />
         <NavLinks />
         <div className={styles.rightSideNav}>
-          {/* <SearchBar /> */}
+          <SearchBar />
           <ThemeSwitcher />
         </div>
       </nav>
