@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HeroSection = ({ block, image, altText, category, title }) => {
   return (
-    <Link href="http://localhost:3000/blogs/1">
+    <Link href="/blogs/1">
       <div
         className={styles.container}
         style={!block ? { paddingBottom: "64px" } : null}

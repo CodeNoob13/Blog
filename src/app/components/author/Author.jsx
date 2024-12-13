@@ -5,7 +5,7 @@ const Author = ({ image, name, date, altText }) => {
   return (
     <div className={styles.authorContainer}>
       <Image
-        src={image}
+        src="/authorImage.jpg"
         alt={altText}
         height={36}
         width={36}
